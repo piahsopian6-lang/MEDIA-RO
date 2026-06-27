@@ -4751,15 +4751,15 @@ Seorang siswa menyatakan:
                 card4Correct = quiz2.correct;
             }
 
-            const card1Title = isNTT ? '<strong style="font-size: 10px;">Sasando</strong>' : isAceh ? '<strong style="font-size: 10px;">Serune Kalee</strong>' : 'Deskripsi 1';
-            const card2Title = isNTT ? '<strong style="font-size: 10px;">Sasando: Control of Variables</strong>' : isAceh ? '<strong style="font-size: 10px;">Serunee Kalee: Hypothetico-Deductive Reasoning</strong>' : 'Deskripsi 2';
+            const card1Title = isNTT ? '<strong style="font-size: 10px;">Sasando</strong>' : isAceh ? '<strong style="font-size: 10px;">Serune Kalee</strong>' : isSulawesiUtara ? '<strong style="font-size: 10px;">Kolintang</strong>' : 'Deskripsi 1';
+            const card2Title = isNTT ? '<strong style="font-size: 10px;">Sasando: Control of Variables</strong>' : isAceh ? '<strong style="font-size: 10px;">Serunee Kalee: Hypothetico-Deductive Reasoning</strong>' : isSulawesiUtara ? '<strong style="font-size: 10px;">Kolintang : conservation reasoning</strong>' : 'Deskripsi 2';
             document.querySelector('#card-1 .card-title').innerHTML = card1Title;
             document.querySelector('#card-2 .card-title').innerHTML = card2Title;
             document.getElementById('quiz-cards-title').innerText = overlayTitle;
 
             // Set card 3 and 4 titles
-            const card3Title = isNTT ? '<strong style="font-size: 10px;">Sasando Tier 1: Control of Variables</strong>' : isAceh ? '<strong style="font-size: 10px;">Serunee Kalee Tier 1: Hypothetico-Deductive Reasoning</strong>' : 'Soal 1';
-            const card4Title = isNTT ? '<strong style="font-size: 10px;">Sasando Tier 2: Control of Variables</strong>' : isAceh ? '<strong style="font-size: 10px;">Serunee Kalee Tier 2: Hypothetico-Deductive Reasoning</strong>' : 'Soal 2';
+            const card3Title = isNTT ? '<strong style="font-size: 10px;">Sasando Tier 1: Control of Variables</strong>' : isAceh ? '<strong style="font-size: 10px;">Serunee Kalee Tier 1: Hypothetico-Deductive Reasoning</strong>' : isSulawesiUtara ? '<strong style="font-size: 10px;">Kolintang Tier 1: conservation reasoning</strong>' : 'Soal 1';
+            const card4Title = isNTT ? '<strong style="font-size: 10px;">Sasando Tier 2: Control of Variables</strong>' : isAceh ? '<strong style="font-size: 10px;">Serunee Kalee Tier 2: Hypothetico-Deductive Reasoning</strong>' : isSulawesiUtara ? '<strong style="font-size: 10px;">Kolintang Tier 2: conservation reasoning</strong>' : 'Soal 2';
             document.querySelector('#card-3 .card-title').innerHTML = card3Title;
             document.querySelector('#card-4 .card-title').innerHTML = card4Title;
 
